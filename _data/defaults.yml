@@ -2,3 +2,14 @@ home:
   heading: "Your awesome heading"
   subheading: "Your awesome subheading"
   banner: "Your image url"
+
+# Jekyllでウェブサイトを構築する際に使用される、
+# ウェブサイトのホームページの設定を行うためのYAMLデータ。
+
+# home:: 設定がホームページに関するものであることを示すキー。
+# heading: "Your awesome heading": ホームページのヘッダーに表示されるテキストを指定。
+# subheading: "Your awesome subheading": ホームページのサブヘッダーに表示されるテキストを指定。
+# banner: "Your image url": ホームページのバナーに表示される画像のURLを指定。
+# 具体的には、この例の場合、ホームページのヘッダーには「Your awesome heading」、
+# サブヘッダーには「Your awesome subheading」が表示され、
+# バナーには「Your image url」で指定された画像が表示される。
