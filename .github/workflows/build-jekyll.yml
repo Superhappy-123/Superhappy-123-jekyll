@@ -31,3 +31,27 @@ jobs:
           jekyll_baseurl: '/jekyll-theme-yat'  # Default is empty
           cname: ''                  # Default is to not use a cname
           actor: ''                  # Default is the GITHUB_ACTOR
+          
+# ワークフローの名前を「Github Pages」と定義。
+
+# イベントとして、マスターブランチにコミットがプッシュされた場合にワークフローをトリガーするように設定。
+# （Githubの機能である「Webhooks」を利用して、リポジトリに対してイベントとして「push」を選択し、
+# 　ブランチとして「master」を指定し、リポジトリのマスターブランチにコミットがプッシュされたときにのみ、
+# 　このワークフローが実行される設定。
+# 　よって、このワークフローは、開発者がリポジトリに変更を加え、その変更をプッシュしたときに自動的に実行され、
+# 　ウェブサイトをビルドしてGithub Pagesにデプロイすることができるため、手動でビルドやデプロイを実行する手間が
+# 　省けるだけでなく、常に最新のコードでウェブサイトを更新することができる）
+
+# ジョブとして、「build_and_deploy」という名前のジョブを定義している。
+# このジョブは、最新のUbuntu環境で実行されるように設定されている。
+# ステップとして、アクション「actions/checkout@v2」を使用して、リポジトリのソースコードをチェックアウトする。
+# ステップとして、アクション「actions/cache@v1」を使用して、依存関係をキャッシュするように設定。（これにより、ビルド速度を向上）
+# ステップとして、アクション「jeffreytse/jekyll-deploy-action@master」を使用し、Githubにデプロイするための設定を行っている。
+#　 このアクションは、Jekyllでウェブサイトをビルドして、Github Pagesにデプロイするための機能を提供。
+# 　設定としては、デプロイ先のブランチ、ソースの場所、Jekyllの設定ファイル、ベースURLなどを指定する。
+# ${{ secrets.GITHUB_TOKEN }}という部分は、GithubのPersonal Access Token(PAT)を指定。
+# このトークンは、GithubのAPIを呼び出す際に使用、アクセストークンを直接公開することなく、安全に認証を行うことができます。
+# API： Application Programming Interface
+
+
+
