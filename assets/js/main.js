@@ -1,3 +1,4 @@
+DOM要素にマッチング機能を追加することで、すべてのブラウザーで一貫性のある機能を提供することを目的としたポリフィル（互換性維持のためのコード）
 // Fix DOM matches function
 if (!Element.prototype.matches) {
   Element.prototype.matches =
@@ -14,6 +15,7 @@ if (!Element.prototype.matches) {
     };
 }
 
+//ブラウザーのウィンドウ内で垂直および水平のスクロール位置を計算（getScrollPos())
 // Get Scroll position
 function getScrollPos() {
   var supportPageOffset = window.pageXOffset !== undefined;
