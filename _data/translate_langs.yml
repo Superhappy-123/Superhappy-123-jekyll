@@ -24,3 +24,11 @@
 - lang: ru
   img: https://cdn.countryflags.com/thumbs/russia/flag-400.png
   text: Russian
+
+
+# 翻訳言語を表し、各言語に対応する国旗の画像と言語名を定義している。
+# 各言語は、lang、img、textの3つのプロパティで定義されている。
+# langは言語コード
+# imgはその言語に対応する国旗のURL
+# textは言語名
+# 多言語サイトで、翻訳の対象となる言語を選択できるように使用される。
