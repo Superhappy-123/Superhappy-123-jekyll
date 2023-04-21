@@ -17,3 +17,20 @@
   window.addEventListener("load", initGoogleAnalytics);
 </script>
 
+
+
+<!-- このコードは、Google Analyticsを使用してWebページのトラッキングを行うためのもの。
+まず、initGoogleAnalytics()という名前のJavaScript関数が定義される。
+この関数は、ブラウザがDo Not Trackを有効にしている場合にはGoogle Analyticsを無効にするため、
+window.doNotTrack、navigator.doNotTrack、navigator.msDoNotTrackの値をチェックする。
+
+そして、サイトの設定でDo Not Trackが有効になっていない場合、またはブラウザがDo Not Trackを
+有効にしていない場合にのみ、Google Analyticsのトラッキングコードを読み込んで実行。
+
+次に、ga()関数を使用して、Google AnalyticsのトラッキングIDを設定し、'send', 'pageview'を
+引数として渡すことで、ページビューのトラッキングを行う。
+このコードでは、'{{ site.google_analytics }}'の部分に、サイトの設定ファイルで指定された
+Google AnalyticsのトラッキングIDが代入される。
+最後に、window.addEventListener()を使用して、ページが完全に読み込まれた後に
+initGoogleAnalytics()関数を呼び出すように設定している。
+これにより、ページの読込が完了する前にGoogle Analyticsのトラッキングコードが実行されることを防ぐ。 -->
