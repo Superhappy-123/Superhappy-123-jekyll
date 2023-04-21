@@ -49,3 +49,19 @@
         theme="{{ site.utterances.theme }}">
  </script>
 {%- endif -%}
+
+<!-- Utterancesと呼ばれるGitHub Issuesベースのコメントシステムを
+ウェブサイトに統合している。
+site.utterances.follow_site_themeがtrueの場合に、Utterancesを
+サイトのテーマに合わせてダイナミックに変更する。
+コードは、utterancesThemeFromDataTheme()関数を使用して、
+現在のテーマに基づいてUtterancesテーマを動的に設定。
+次に、setUtterancesTheme()関数を使用して、
+MutationObserverを使用してdata-theme属性の変更を監視し、
+変更があった場合はUtterancesのテーマを更新。
+site.utterances.follow_site_themeがfalseの場合、
+Utterancesスクリプトが埋め込まれています。このスクリプトは、
+Utterancesを使用して、ウェブサイトのページにコメント機能を提供する。
+このスクリプトは、issue-term、label、repo、themeなどの属性を使用して、
+適切なリポジトリに接続し、Utterancesの機能を有効にします。
+ -->
