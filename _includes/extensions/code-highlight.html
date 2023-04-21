@@ -89,3 +89,20 @@ document.addEventListener('DOMContentLoaded', function(event) {
     display: none;
   }
 </style>
+
+
+<!-- 以下の機能を実装。
+１）highlight.jsというライブラリを読み込み、ページ内のコードブロックに
+　シンタックスハイライトを適用。
+２）シンタックスハイライトされたコードブロックに、
+　コードの言語を示すバッジを表示。
+
+コードブロックには pre code セレクタが指定され、それぞれのコードブロックに対し
+addLangData 関数が適用され、コードブロックの言語情報を追加。
+また、addBadge 関数が適用され、コードブロックにバッジを追加。
+
+スタイルには、バッジのスタイルが定義されている。
+バッジには pre.badge::before セレクタが指定され、バッジのスタイルを定義する。
+Firefoxで誤った表示がされることを防ぐために、code > table pre::before セレクタが
+指定されている。
+ -->
