@@ -13,3 +13,18 @@
     });
     gitment.render('gitment_thread')
   </script>
+
+<!-- Gitment(※)というJavaScriptベースのコメントシステムをサイトに統合している。
+<div id="gitment_thread"></div> は、Gitmentが表示される場所を定義。
+<link> タグは、Gitmentのデフォルトスタイルシートを読み込む。
+<script> タグは、Gitmentライブラリを読込み、Gitmentオブジェクトを作成し、
+　render() メソッドを使用してGitmentを描画。
+このスクリプトは、ページのID、所有者、リポジトリ、OAuthアクセストークンなどの
+設定を使用してGitmentオブジェクトを構築し、Gitmentを gitment_thread というIDを持つ
+<div> 要素にレンダリングしている。
+
+※Gitment：GitHubのIssue機能を使用して、GitHubリポジトリをバックエンドとして
+使用するJavaScriptベースのコメントシステム。
+GitHubアカウントを持つユーザーは、サイトの特定のページにコメントを投稿できる。
+マークダウン形式のコメントをサポート。オープンソースで、誰でもGitHubリポジトリから
+入手して使用することができる。-->
