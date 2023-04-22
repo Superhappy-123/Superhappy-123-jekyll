@@ -24,3 +24,24 @@
 
   setRandomBgImage('{{ selector }}', '{{ seed }}', {{ zoom | default: 1}});
 </script>
+
+
+<!--
+  このコードは、ランダムな三角形の背景パターンを作成して、
+  指定されたHTML要素の背景に適用するためのJavaScriptコード。
+
+  　まず、 if 条件文で、 include.selector と include.seed の値が
+　存在する場合に、それらを selector と seed 変数に割り当てる。
+　これらの変数は、ランダムな背景パターンを適用するHTML要素のセレクタと、
+　ランダムなパターンを生成するためのシード値を保持する。
+
+　次に、Trianglify ライブラリを読み込み、 setRandomBgImage 関数を定義。
+　この関数は、 selector 変数で指定されたHTML要素を探し、 
+　seed 変数で指定されたシード値を使用し、指定された拡大率（zoom）で
+　指定されたサイズのランダムな三角形の背景パターンを作成。
+　その後、作成した背景パターンを image 変数に設定し、その変数を要素に追加。
+
+　最後に、 setRandomBgImage 関数を呼び出し、引数として selector 、
+　seed 、および zoom の値を渡す。
+　zoom は省略可能な引数で、デフォルト値は 1 。
+ -->
