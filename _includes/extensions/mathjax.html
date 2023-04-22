@@ -8,3 +8,26 @@
 </script>
 <script
 src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+
+
+<!--
+このコードは、MathJax（※）を使用してLaTeX表現（※）をHTMLページに表示するための設定。
+　MathJax：Webページ上で数式を表示するためのJavaScriptライブラリ。
+　　　　　HTML、Markdown、WordPressなど、様々な形式のドキュメントに対応。
+　　　　　MathJaxを使用することで、LaTeXのような数式表現が可能になる。
+　　　　　複数の数式表現言語（MathML、TeX、AsciiMathなど）をサポート、Webページの多様な
+　　　　　文書形式で利用できるため、数学や科学の分野で広く使用されている。
+　LaTeX表現（レイテック）：　高品質な組版を実現するために開発された文書処理システム、
+　　　　　数学記号や数式、科学技術文書の表現において非常に便利。
+　　　　　LaTeXでは、数学記号や数式を簡単に入力することができ、専用のソフトウェアを使ってコンパイルし、
+　　　　　PDFなどの文書ファイルに変換される。
+
+まず、<script>タグ内にあるtex2jaxオプションは、$で囲まれたLaTeX表現を検出し、
+HTMLのMathMLに変換するためのオプション。
+skipTagsオプションは、これらの変換を行わないように指定されたHTMLタグのリストを指定。
+
+次に、<script>タグの中にあるMathJax.jsの読み込みが行われる。
+このスクリプトは、MathJaxを初期化するためのもので、TeX-MML-AM_CHTMLという設定ファイルを使用。
+この設定ファイルは、LaTeX表現をMathMLに変換するためのもの。
+AM_CHTMLは、MathJaxがHTML + CSSを使用して数式をレンダリングする方法を指定するもの。
+ -->
