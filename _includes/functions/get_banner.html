@@ -66,3 +66,55 @@
   {% assign has_banner = true %}
 {% endif %}
 
+
+<!-- 
+　このコードは、一連の変数に値を割り当てるためのテンプレート。
+　JekyllまたはLiquid（テンプレートエンジン）で使用されることを記載している。
+　また、functions.htmlという別のテンプレートをインクルードしている。
+　このテンプレートは、log、get_valueなどのカスタム関数を含む。
+　このテンプレートで定義された関数は、ログメッセージを出力したり、
+　値を取得したりするために使用される。
+
+　以下は出だしのブロックの解説
+
+{%- include functions.html func='log' level='debug' msg='Get banner value' -%}
+カスタム関数logを呼び出し、"Get banner value"というメッセージをログに記録。
+ログレベルはdebug。functions.htmlテンプレートをインクルードしている。
+
+{% assign name = 'banner' %}
+name変数に"banner"という文字列を割り当てている。
+
+{%- include functions.html func='get_value' -%}
+カスタム関数get_valueを呼び出し、name変数の値に基づいて値を取得。
+functions.htmlテンプレートをインクルードしている。
+
+{% assign banner = return %}
+get_value関数から返された値をbanner変数に割り当てる。
+
+{%- if banner.first -%}
+bannerオブジェクトにfirstという属性がある場合に、その値を評価する条件文。
+
+{%- include functions.html func='log' level='debug' msg='Get banner_image value' -%}
+カスタム関数logを呼出し、"Get banner_image value"というメッセージをログに記録。
+ログレベルはdebug。functions.htmlテンプレートをインクルードしている。
+
+{% assign name = 'banner.image' %}
+name変数に"banner.image"という文字列を割り当てる。
+
+{%- include functions.html func='get_value' -%}
+カスタム関数get_valueを呼出し、name変数の値に基づいて値を取得。
+functions.htmlテンプレートをインクルードしている。
+
+{% assign banner_image = return | relative_url %}
+get_value関数から返された値をrelative_urlフィルターを使用して変換し、banner_image変数に割り当て。
+
+{%- else -%}
+banner.firstがfalseの場合に実行される、条件文のelseブロック。
+
+{% assign banner_image = banner | relative_url %}
+bannerオブジェクトをrelative_urlフィルターを使用して変換し、banner_image変数に割り当て。
+
+{%- endif -%}
+条件文の終了を示すためのendifタグ。
+
+-->
