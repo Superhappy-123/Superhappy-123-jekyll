@@ -11,3 +11,19 @@
     {{ post.title | escape }}
   </a>
 </span>
+
+
+<!--  
+　このコードは、引数として渡された include.item の存在を確認し、
+　存在する場合は item 変数に代入、
+　次に、post 変数に item を代入。
+　最後に、post 変数から date プロパティを取得し、その日付を date_format に従って
+　フォーマットして表示し、post のタイトルをリンクとして表示するHTMLコードを生成。
+　具体的には、以下のようなHTMLを生成。
+
+　<span class="post-meta">記事の日付</span>
+　<span>
+ 　 <a class="post-link" href="記事のURL">記事のタイトル</a>
+　</span>
+
+-->
