@@ -41,3 +41,6 @@ In future, drivers will be able to choose whether they wish to be driven or do t
 In modern browsers, adding a video to your page is as easy as adding an image. No longer do you need to deal with special plug-ins or require crazy markup, you can do it with a single element.
 ![video](//www.html5rocks.com/en/tutorials/video/basics/devstories.webm)
 
+<!--  
+Youtubeビデオ、画像を組み込む記事の例
+-->
