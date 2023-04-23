@@ -15,3 +15,29 @@
       <!-- {{ msg }} -->
   {% endif %}
 {% endif %}
+
+
+<!--
+
+ このコードは、if ステートメントを使用して、デバッグ用のメッセージを
+　表示するかどうかを判断している。
+
+　最初のブロックでは、include.params.level が存在する場合、
+　level 変数に include.params.level の値を代入。
+
+　次のブロックでは、include.params.msg が存在する場合、
+　msg 変数に include.params.msg の値を代入。
+
+　次のブロックでは、site.debug が true である場合に、
+　level 変数が debug で、かつ Jekyll の環境が "development" の場合にのみ、
+　msg 変数を HTML コメントで表示。
+　level 変数が debug でない場合は、msg 変数を HTML コメントで表示。
+
+　つまり、Jekyll の環境が "development" であり、site.debug が true である場合に、
+　level 変数が debug である場合に限り、msg 変数を HTML コメントで表示。
+　それ以外の場合は、何も表示しない。
+
+　このように、デバッグ用のメッセージを表示することで、サイトの開発者が
+　問題を特定しやすくなる。
+ 
+-->
