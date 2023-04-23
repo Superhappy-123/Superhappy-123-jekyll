@@ -156,9 +156,9 @@ yat:
 # Page default value
 # defaults:
 #   home:
-#     heading: "Your awesome heading"
-#     subheading: "Your awesome subheading"
-#     banner: "Your image url"
+#     heading: "My awesome heading"
+#     subheading: "My awesome subheading"
+#     banner: "My image url"
 
 # Banner default settings
 # These banner settings are for global banner default, but you can also
@@ -217,3 +217,29 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-spaceship
+
+
+# このコードは、Jekyllを使用して、ブログまたはウェブサイトを作成する際に
+# 使用される設定ファイルである「_config.yml」の内容を示している。
+
+# このファイルには、サイトタイトル、電子メール、著者など、サイト全体の設定が
+# 含まれており、著作権表示、サイトの説明、favicon、Google Analyticsなど、
+# さまざまなオプションがある。
+# これらの設定は、サイトの見た目や動作に影響を与えるため、重要な役割を果たす。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
