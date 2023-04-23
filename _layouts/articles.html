@@ -12,3 +12,17 @@ sidebar: category-list
 
   {% include views/pagination.html %}
 </div>
+
+
+<!--  
+　このコードは、ブログ記事やウェブページのレイアウトを定義するために使用される。
+
+　・layout: framework : このページのレイアウトを framework として指定。
+　・sidebar: category-list : サイドバーにカテゴリリストを表示するように指定。
+　・<div class="articles"> : 記事を表示するための div タグを定義。
+　・{% if page.banner == nil %} : page.banner が定義されていない場合、 page.title を banner に代入。
+　・{{ content }} : このページのコンテンツを表示。
+　・{% include views/pagination.html %} : ページネーションを表示するために、
+ 　views/pagination.html というテンプレートをインクルードしている。
+
+-->
