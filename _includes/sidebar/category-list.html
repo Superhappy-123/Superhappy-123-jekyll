@@ -7,3 +7,22 @@
 {% assign field = 'categories' %}
 {% assign url = '/categories.html' | relative_url %}
 {% include sidebar/common-list.html %}
+
+
+
+<!--
+　このコードは、サイドバーにカテゴリーリストを表示するためのもの。
+　まず、 get_categoriesという関数を呼び出して、カテゴリーのリストを取得
+　categoriesという変数に代入します。
+
+　その後、 keys変数に categoriesを代入、 field変数にはcategoriesという
+　値を設定。 url変数には/categories.htmlという値を設定、
+　relative_urlフィルターを使用して、サイトのルートからの相対パスに変換。
+
+　最後に、common-list.htmlというファイルをインクルードし、
+　サイドバーにカテゴリーリストを表示します。このファイルには、渡された
+　keys、field、urlの値を使用してリストを生成するためのコードが含まれる。
+
+　なお、最初の2行にある {%-と-%}は、Liquidで、出力される余分な空白を取り除くための構文。
+
+-->
