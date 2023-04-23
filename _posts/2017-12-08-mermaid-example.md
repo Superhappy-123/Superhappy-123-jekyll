@@ -73,3 +73,15 @@ Moving --> Still
 Moving --> Crash
 Crash --> [*]
 ```
+
+<!--  
+mermadeを使用した記事の例
+※）Mermade
+PlantUMLを使用してAPIドキュメントを自動生成するためのツール。
+Mermadeは、OpenAPI定義を使用してPlantUMLのクラス図とシーケンス図を生成し、
+APIドキュメントを自動化する。
+また、Mermadeは、APIドキュメントをSwagger UIやRedocなどの
+他のドキュメントビューアに統合するためのオプションも提供している。
+Mermadeは、Node.jsで実行されるコマンドラインツールとして提供されている。
+
+-->
