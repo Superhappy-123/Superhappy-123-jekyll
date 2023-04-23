@@ -43,3 +43,46 @@
     }
   }
 }
+
+
+// このコードは、共通のリストスタイルを定義
+// .common-listクラスには、以下のプロパティが設定されている。
+
+// 　@include relative-font-size(1.0): 相対的なフォントサイズを設定するミックスインを適用。
+// 　min-width: 200px: リストの最小幅を200pxに設定します。
+
+// 　ul要素には、以下のプロパティが設定されています。
+
+// 　list-style: none: リストのマーカーを非表示にする。
+// 　margin: 0: リストのマージンを0に設定。
+
+// 　li要素には、以下のプロパティを設定。
+
+// 　　border-bottom: solid 1px #00000018: 各リストアイテムの下部に1pxの線を表示。
+// 　　&:last-child {...}: 最後のリストアイテムには、下部の境界線を表示しないようにする。
+
+// a要素には、以下のプロパティが設定されている。
+
+// 　display: flex: a要素をフレックスボックスにすることで、子要素を水平方向に配置。
+// 　justify-content: space-between: リンクテキストと右端にあるspan要素を左右に配置。
+// 　padding: 8px 12px: テキストと境界線の間に8pxの余白を追加。
+// 　text-decoration: none: 下線を非表示に。
+// 　font-weight: normal: テキストのフォントウェイトを通常に。
+// 　color: $text-color: テキストカラーを$text-color変数の値に設定。
+// 　transition: background 0.2s: マウスオーバー時に背景色を変更するトランジションを設定。
+
+// a要素の:hover状態には、以下のプロパティを設定。
+
+// 　background-color: mix($theme-color, #eaeaea, 20%):
+//   マウスオーバー時に背景色を20％暗くしたカラーに変更。
+
+// 最後に、li要素内のspan要素には、以下のプロパティを設定。
+
+// 　@include relative-font-size(0.8): 相対的なフォントサイズを設定するミックスインを適用。
+// 　display: inline-block: インラインブロックに設定。
+// 　border-radius: 10px: 角を丸める。
+// 　align-self: center: 要素を垂直方向に中央に配置。
+// 　background: #000000bd: 背景色を黒色に設定。
+// 　padding: 0px 8px: テキストと余白の間に8pxの余白を追加。
+// 　margin-left: 20px: リンクテキストとの間を20pxに設定
+
