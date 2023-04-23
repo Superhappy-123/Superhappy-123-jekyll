@@ -60,3 +60,15 @@
     }
   }
 }
+
+
+// このコードは、Post menuのスタイルを定義している
+
+// .post-menu: Post menu全体に対するスタイルを定義。padding、min-width、max-widthなどを指定。
+// .post-menu-title: Post menuのタイトルのスタイルを定義。font-size、margin、font-weight、colorを指定。
+// .post-menu-content: Post menuのコンテンツのスタイルを定義。ul要素内のスタイルを指定。
+// ul: 箇条書きのリストに対するスタイルを定義。border、$indent、$active-bgcolorなどを指定。
+// a: リストのリンクに対するスタイルを定義。display、padding、colorなどを指定。
+// .active: アクティブなリスト項目に対するスタイルを定義。background-color、transition、border、margin、
+// a要素のcolorなどを指定。また、:hover時のスタイルも定義されている。
+
