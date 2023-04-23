@@ -33,3 +33,16 @@ layout: default
     {%- endfor -%}
   </section>
 </div>
+
+<!--  
+　このコードは、defaultレイアウトを使用してページを表示するLiquidテンプレート
+　2つのセクションを持つフレームワークを作成している。
+　{{ content }}は、ページのコンテンツを表示するために使用され、
+　2つ目のセクションはサイドバーで、page.sidebar、site.defaults [page.layout] .sidebar、
+　またはlayout.sidebarから取得されたアイテムのリストを表示。
+　それぞれのアイテムは、sidebar/というプレフィックスと.htmlというサフィックスで
+　定義されたファイルに含まれるHTMLコードを含むため、それらは{%- include {{ file }} %}を
+　使用してサイドバーに挿入される。
+
+-->
+
