@@ -19,3 +19,19 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
+
+MITライセンス（MIT）
+著作権（c）2019 Jeffrey Tse
+
+このソフトウェアおよび関連するドキュメンテーションファイル（以下「ソフトウェア」といいます）の
+複製物を入手するすべての人に、以下の条件に従ってソフトウェアを使用、コピー、変更、統合、公開、
+配布、サブライセンス、および/または販売する権利が、無償で与えられます。
+
+上記の著作権表示および本許諾表示は、ソフトウェアのすべての複製物または重要な部分に含まれる
+ものとします。
+
+本ソフトウェアは「現状有姿のまま」提供され、商品性、特定目的適合性、および非侵害性についての
+いかなる保証もなく、明示的にも黙示的にもありません。いかなる場合においても、著作者または著作権者は、
+契約、不法行為、またはその他の手段によるか、またはソフトウェアまたはその使用またはその他の取引から
+生じたかどうかを問わず、いかなる請求、損害賠償、その他の責任についても責任を負いません。
