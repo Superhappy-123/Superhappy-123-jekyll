@@ -1,4 +1,3 @@
-DOM要素にマッチング機能を追加することで、すべてのブラウザーで一貫性のある機能を提供することを目的としたポリフィル（互換性維持のためのコード）
 // Fix DOM matches function
 if (!Element.prototype.matches) {
   Element.prototype.matches =
@@ -15,7 +14,6 @@ if (!Element.prototype.matches) {
     };
 }
 
-//ブラウザーのウィンドウ内で垂直および水平のスクロール位置を計算（getScrollPos())
 // Get Scroll position
 function getScrollPos() {
   var supportPageOffset = window.pageXOffset !== undefined;
@@ -58,3 +56,20 @@ function smoothScrollTo(y, time) {
   }
 }
 
+
+// このコードは、次の3つの関数を定義している。
+
+// １）Fix DOM matches function（DOMマッチング関数の修正）：
+// 　要素の matches メソッドが定義されていない場合に、標準の matchesSelector メソッドや
+//  ベンダー固有のメソッドを使用して、指定されたセレクターに要素が一致するかどうかを確認する。
+
+// ２）Get Scroll position（スクロール位置を取得する）：
+// 　windowオブジェクトのページオフセットと、CSS1互換モードの設定を確認して、
+// 　ページのスクロール位置を取得します。
+
+// ３）Smooth scroll（スムーズスクロール）：
+// 　アニメーション的にページをスクロールする関数。
+// 　アニメーションを60フレーム（count）で分割し、カウントごとにスクロール位置を変更し、
+// 　ページのスムーズなスクロールを実現する。
+// 　この関数は、スクロールする位置と時間を引数として受け取り、時間が指定されていない場合は
+// 　500msでスクロールする。
