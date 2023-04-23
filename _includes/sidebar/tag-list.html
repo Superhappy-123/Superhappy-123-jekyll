@@ -7,3 +7,19 @@
 {% assign field = 'tags' %}
 {% assign url = '/tags.html' | relative_url %}
 {%- include sidebar/common-list.html -%}
+
+
+<!--  
+　このコードは、サイドバーに表示されるタグの一覧を生成するためのもの。
+　インクルードファイル内で使用される変数に基づいて、タグのリストを動的に生成。
+
+　まず、functions.htmlというファイルから、log関数とget_tags関数を読み込み、
+　その後、log関数を使用して、デバッグレベルでGet tags valueというメッセージをログに出力。
+　その後、get_tags関数を呼び出し、戻り値をtags変数に代入。
+　その後、keys変数にtagsを、field変数に'tags'を、url変数に'/tags.html'をそれぞれ代入。
+　
+　最後に、common-list.htmlというインクルードファイルを読み込み、
+　<div class="common-list">タグでリストを囲み、各タグとそのタグに属する投稿の数を
+　表示するリンクを動的に生成。
+
+-->
