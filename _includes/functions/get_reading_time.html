@@ -47,3 +47,28 @@
   | append: mins
   | append: " "
   | append: unit %}
+
+
+<!-- 
+　このコードは、指定された記事の読了時間を計算し、"About x minutes"または
+　"About x hours y minutes"という形式の文字列を返すためのもの。
+
+　まず、include.paramsからarticle、lang、speedという値を取得し、
+　それぞれarticle、lang、speedという変数に代入。
+　langとspeedは指定されていない場合、それぞれsite.langと160にデフォルト値が設定される。
+
+　functions.htmlというファイルからget_article_wordsという関数を読み込み、
+　return変数にその戻り値を代入。この関数は、指定された記事の単語数を返す。
+
+　wordsの単語数から、記事の読了時間を計算し、total_minsに代入。
+　このとき、読了時間が1分未満の場合、最低でも1分に設定。
+
+　total_minsから、時間と分の単位に分けて計算し、"About x minutes"または
+　"About x hours y minutes"という形式の文字列をreturn変数に代入。
+　最後に、return変数の値が返される。
+
+　一般的には、約200〜250語を1分程度の読了時間として扱うことが一般的、
+　そのため、Liquidコード中では、1分あたりの単語数を speed 変数で指定し、
+　単語数を読了時間に変換している。
+
+ -->
