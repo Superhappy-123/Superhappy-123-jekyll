@@ -198,3 +198,37 @@ This theme is licensed under the [MIT license](https://opensource.org/licenses/m
 [jekyll-sitemap]: https://github.com/jekyll/jekyll-sitemap
 [jekyll-feed]: https://github.com/jekyll/jekyll-feed
 [highlight-js]: https://github.com/highlightjs/highlight.js
+
+
+
+<!--
+ このコードは、Jekyllという静的サイトジェネレーターで動作するテーマ「JEKYLL YAT THEME」のREADMEファイル。
+ READMEファイルは、ソフトウェアの説明、インストール方法、使用方法、
+ ライセンス情報、貢献者リストなどを提供するためのファイルで、
+ 一般的にオープンソースプロジェクトで使用される。
+
+以下は、READMEファイルのコンテンツの概要。
+
+・画像付きのテーマ紹介
+・使い方、インストール方法の解説
+・テーマの主な特徴、機能の説明
+・テーマのライセンス情報
+・貢献者リスト
+
+1〜6行目：画像とテーマのタイトルを中央に表示するHTMLタグ。
+8〜12行目：テーマの説明と、Jekyllのリンクを表示するHTMLタグ。
+14〜21行目：GitHub Actionsとバッジを表示するHTMLタグ。
+　　　　　　GitHub Actionsは、GitHub上でホストされたビルドサービス。
+23〜31行目：ライセンスや支援のバッジを表示するHTMLタグ。
+33〜40行目：貢献者のリストを表示するHTMLタグ。
+42〜49行目：テーマの説明を表示するHTMLタグ。
+51〜56行目：スポンサー募集の文言を表示するHTMLタグ。
+58〜63行目：テーマのデモ画像を表示するHTMLタグ。
+65〜70行目：バナーの説明を表示するHTMLタグ。
+72〜77行目：バナーのデモ画像を表示するHTMLタグ。
+79〜110行目：テーマの特徴と機能の説明を表示するHTMLタグ。
+112〜135行目：テーマのインストール方法についての説明を表示するHTMLタグ。Gem-based Theme Method、Remote Theme Method、Forking/Copying all of the theme files into your projectの3つのインストール方法を解説している。
+137〜142行目：ライセンス情報を表示するHTMLタグ。MITライセンスを採用していることを示している。
+144〜148行目：貢献者リストを表示するHTMLタグ。
+
+ -->
