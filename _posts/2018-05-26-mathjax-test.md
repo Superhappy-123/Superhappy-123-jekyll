@@ -11,3 +11,13 @@ tags: [test]
   * whose IEEE-75 representation cannot be the result of rounding any other integer to fit the IEEE-754 representation
 * For example, $ 2 ^ {53} - 1 $ is a safe integer,
   * it can be exactly represented 
+
+<!--  
+Mathjax※を使った記事の例
+※）
+HTMLやMarkdownなどのWebページ上に数式を表示するためのJavaScriptライブラリ。
+LaTeXの数式表現を含むマークアップ言語を使用することができ、
+Webページに数式を美しく表示することができる。
+MathJaxは、数式の美しいレンダリングに焦点を当てており、高品質のレンダリングを
+提供するための多数のオプションや機能を備えている。
+-->
