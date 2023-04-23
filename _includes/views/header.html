@@ -93,3 +93,26 @@
   }
   document.addEventListener('DOMContentLoaded', initHeader);
 </script>
+
+
+<!--  
+　このコードは、ウェブサイトのヘッダーをレンダリングするためのHTMLとJavaScriptを含む。
+　以下は、コードが行う主なタスクの概要。
+
+　・functions.htmlというファイルをインクルードして、get_bannerおよびlogという2つの関数を使用できるようにする。
+　・header_transparent変数に、header_transparentという名前の値を取得して格納。
+　　変数が定義されていない場合、trueがデフォルト値として設定される。
+　・has_banner変数がtrueであり、header_transparent変数がtrueの場合、header_transparent_class変数に
+　　site-header-transparentという値を設定。
+　・site-headerというクラスを持つheader要素を作成し、header_transparent_class変数をsite-headerの後に追加。
+　・ページのタイトルとURLを含むナビゲーションバーを作成。
+　・ページの縦方向のスクロール位置を監視し、data-scroll-status属性とdata-header-transparent属性を
+　　<html>要素に設定。
+　・これらのタスクは、JavaScriptで定義されたinitHeader()関数によって実行される。
+　　この関数は、ウェブページの読み込みが完了した後に実行され、ヘッダーの初期化を行う。
+　・initHeader()関数は、addEventListener()メソッドを使用して、ウィンドウがスクロールされたときに
+　　storeScrollData()関数を呼び出し、ページのスクロール位置を監視。
+　・storeScrollData()関数は、スクロール位置に応じてdata-scroll-status属性を設定し、
+　　ヘッダーが透明であるかどうかを示すdata-header-transparent属性を設定。
+
+-->
