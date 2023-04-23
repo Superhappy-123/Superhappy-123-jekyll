@@ -10,3 +10,21 @@
   | remove_first: split_mark
   | split: split_mark
   | sort: self %}
+
+<!--   
+  このコードでは、サイトのタグを取得し、アルファベット順に並べ替えている。
+　
+　まず、{% assign split_mark = '<|>' %} で区切り文字を設定。この場合、<|> が区切り文字。
+
+　次に、{% assign tags = '' %} で空のタグリストを作成。
+　その後、{% for tag in site.tags %} で、サイトに定義されている全てのタグに対して
+　ループ処理を行う。
+　ループ内で、{% assign name = tag | first %} でタグの名前を取得し、
+　{% assign tags = tags | append: split_mark | append: name %} で
+ 　split_mark で区切ったタグリストを作成。
+
+　最後に、{% assign return = tags | remove_first: split_mark | split: split_mark | sort: self %} で、
+　最初に作成したタグリストの先頭にある split_mark を除去し、split_mark で分割し、
+　アルファベット順に並べ替えた結果を return 変数に代入している。
+
+-->
