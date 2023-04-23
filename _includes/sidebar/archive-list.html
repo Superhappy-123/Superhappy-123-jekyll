@@ -8,3 +8,17 @@
 {% assign field = 'date' %}
 {% assign url = '/archives.html' | relative_url %}
 {% include sidebar/common-list.html %}
+
+<!--
+ 　このコードはサイドバーに、datetimes 変数を使用して日付リストを、
+ 　keys、field、および url 変数を設定し、sidebar/common-list.html
+ 　ファイルを呼び出している。
+　また、functions.html ファイルに定義された log 関数を使用して、
+　デバッグ情報を出力している。
+
+　具体的には
+　functions.html ファイルに定義された log 関数と get_datetimes 関数を
+　呼び出し、返された値を使用して、datetimes、keys、field、および
+　url 変数を設定し、sidebar/common-list.html ファイルを呼び出している。
+
+-->
