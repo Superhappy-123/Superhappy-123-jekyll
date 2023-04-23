@@ -14,3 +14,16 @@ sidebar: category-list
   {%- include views/segments.html -%}
 
 {%- endif -%}
+
+
+<!--  
+　このコードは、Jekyllのフレームワークのページのレイアウトを定義。
+　具体的には、サイドバーにカテゴリーリストを表示するように指示。
+
+　ifステートメントは、投稿がある場合にのみカテゴリーを表示するように指示。
+　functions.htmlファイルのget_categories関数が呼び出されて、
+　サイト内のすべての投稿からカテゴリーを取得し、categories変数に格納される。
+　keys変数には、カテゴリーの配列が格納され、field変数にはカテゴリーの名前が指定される。
+　最後に、views/segments.htmlファイルが呼び出され、カテゴリーをリスト形式で表示するように指示。
+
+-->
