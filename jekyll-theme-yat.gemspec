@@ -26,3 +26,9 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-paginate", "~> 1.1"
   spec.add_runtime_dependency "jekyll-spaceship", "~> 0.2"
 end
+
+
+# このコードは、RubyGemsの仕様書（.gemspecファイル）。
+# Jekyllテーマ「Yet another theme（YAT）」の仕様書であり、
+# パッケージの名前、バージョン、依存関係、作者などの情報を含んでいる。
+# また、このテーマで使用されるファイルの一覧も定義されている。
